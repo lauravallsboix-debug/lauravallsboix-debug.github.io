@@ -16,6 +16,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.1, ease: 'easeOut' }}
       whileHover={{ y: -6 }}
+      onClick={() => project.url && window.open(project.url, '_blank')}
     >
       <div className="w-full aspect-[4/3] overflow-hidden" style={{ backgroundColor: project.color }}>
         {project.image ? (
@@ -70,7 +71,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
         style={{ backgroundColor: 'rgba(99,29,63,0.85)' }}
       >
         <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#ffec9e' }}>
-          Ver proyecto →
+          {project.url ? 'Ver web →' : 'Ver proyecto →'}
         </span>
       </motion.div>
     </motion.article>

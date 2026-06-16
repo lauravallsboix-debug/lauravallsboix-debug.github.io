@@ -8,6 +8,7 @@ export interface Project {
   color: string
   imageFit?: 'cover' | 'contain'
   imagePosition?: string
+  url?: string
 }
 
 export const projects: Project[] = [
@@ -26,10 +27,11 @@ export const projects: Project[] = [
     title: "L'ULL",
     category: 'Proyecto Personal',
     description:
-      "Marca propia multidisciplinar que combina joyería artesanal, ropa con prints DTF y organización de eventos. Identidad completa, sub-marcas (La mar de be, Terreta), fichas técnicas y comunicación digital.",
-    tags: ['Branding', 'Moda', 'Eventos'],
+      "Marca propia multidisciplinar que combina joyería artesanal y diseño de ropa. Identidad completa, sub-marcas (La mar de be, Terreta), fichas técnicas y comunicación digital.",
+    tags: ['Branding', 'Moda', 'Identidad'],
     image: '/projects/lull.png',
     color: '#d6e4f0',
+    url: 'https://lull2.webnode.es/',
   },
   {
     id: 'semilla',
