@@ -110,10 +110,11 @@ export default function EntrelascuerdasProject() {
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <img
-            src="/projects/entrelascuerdas/hero.png"
+            src="/projects/entrelascuerdas/hero.webp"
             alt="Fisio Entrelascuerdas — logo sobre pista"
             className="w-full object-cover"
             style={{ maxHeight: 420, objectPosition: 'center' }}
+            fetchPriority="high"
           />
         </motion.div>
 
