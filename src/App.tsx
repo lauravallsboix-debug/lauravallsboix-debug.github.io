@@ -7,6 +7,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import ScrollPath from './components/ScrollPath'
 import UOProject from './components/projects/UOProject'
+import EntrelascuerdasProject from './components/projects/EntrelascuerdasProject'
 import PageTransitionOverlay from './components/PageTransitionOverlay'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -39,6 +40,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/proyecto/uo" element={<UOProject />} />
+        <Route path="/proyecto/entrelascuerdas" element={<EntrelascuerdasProject />} />
       </Routes>
     </>
   )

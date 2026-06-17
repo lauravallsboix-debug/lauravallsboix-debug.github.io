@@ -54,6 +54,7 @@ export const projects: Project[] = [
     tags: ['Branding', 'Logo', 'Illustrator'],
     image: '/projects/entrelascuerdas.png',
     color: '#fff3e0',
+    route: '/proyecto/entrelascuerdas',
   },
   {
     id: 'velvet',
