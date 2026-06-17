@@ -22,6 +22,22 @@ export default function Hero() {
       style={{ backgroundColor: '#dfdcd4' }}
     >
 
+      {/* Illustration — right side */}
+      <motion.div
+        className="absolute right-0 top-0 h-full hidden md:block pointer-events-none"
+        style={{ width: '42%' }}
+        initial={{ opacity: 0, x: 40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.4 }}
+      >
+        <img
+          src="/header-illustration.jpg"
+          alt=""
+          className="w-full h-full object-cover object-top"
+          style={{ maskImage: 'linear-gradient(to left, rgba(0,0,0,0.7) 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,0.7) 60%, transparent 100%)' }}
+        />
+      </motion.div>
+
       <div className="relative z-10 max-w-4xl">
         <motion.p
           className="text-sm font-medium tracking-[0.2em] uppercase mb-6"
