@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import ScrollPath from './components/ScrollPath'
 import UOProject from './components/projects/UOProject'
 import PageTransitionOverlay from './components/PageTransitionOverlay'
+import ScrollToTop from './components/ScrollToTop'
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function Home() {
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <PageTransitionOverlay />
       <Routes>
         <Route path="/" element={<Home />} />
