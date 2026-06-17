@@ -24,10 +24,9 @@ export default function Hero() {
 
       {/* Illustration — right side */}
       <motion.div
-        className="absolute right-0 top-0 h-full hidden md:block pointer-events-none"
-        style={{ width: '75%' }}
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
+        className="absolute inset-0 hidden md:block pointer-events-none"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.4 }}
       >
         <img
@@ -35,8 +34,8 @@ export default function Hero() {
           alt=""
           className="w-full h-full object-cover object-center"
           style={{
-            maskImage: 'linear-gradient(to left, black 30%, transparent 75%), linear-gradient(to bottom, black 50%, transparent 100%)',
-            WebkitMaskImage: 'linear-gradient(to left, black 30%, transparent 75%), linear-gradient(to bottom, black 50%, transparent 100%)',
+            maskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 35%, black 65%), linear-gradient(to bottom, black 55%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 35%, black 65%), linear-gradient(to bottom, black 55%, transparent 100%)',
             maskComposite: 'intersect',
             WebkitMaskComposite: 'source-in',
           }}
