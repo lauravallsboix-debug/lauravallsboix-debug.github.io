@@ -5,7 +5,7 @@ import { usePageTransition } from '../../context/TransitionContext'
 
 const BG = '#e8e4d8'
 
-const pieces = [
+const pieces: { src: string; label: string; aspect: string; position?: string }[] = [
   {
     src: '/projects/velvet/cartel-vermouth.jpg',
     label: 'Cartel — It\'s time for Vermouth',
@@ -25,6 +25,7 @@ const pieces = [
     src: '/projects/velvet/rotulo.png',
     label: 'Rótulo exterior',
     aspect: 'aspect-video',
+    position: 'object-top',
   },
 ]
 
@@ -97,7 +98,7 @@ export default function VelvetProject() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
             >
               <div className={`w-full ${piece.aspect} overflow-hidden`}>
-                <img src={piece.src} alt={piece.label} className="w-full h-full object-cover" />
+                <img src={piece.src} alt={piece.label} className={`w-full h-full object-cover ${piece.position ?? ''}`} />
               </div>
               <figcaption className="px-4 py-3 text-xs font-medium tracking-wide" style={{ color: '#c8a840' }}>
                 {piece.label}
@@ -118,7 +119,7 @@ export default function VelvetProject() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
             >
               <div className={`w-full ${piece.aspect} overflow-hidden`}>
-                <img src={piece.src} alt={piece.label} className="w-full h-full object-cover" />
+                <img src={piece.src} alt={piece.label} className={`w-full h-full object-cover ${piece.position ?? ''}`} />
               </div>
               <figcaption className="px-4 py-3 text-xs font-medium tracking-wide" style={{ color: '#c8a840' }}>
                 {piece.label}
