@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Illustration — right side */}
       <motion.div
         className="absolute right-0 top-0 h-full hidden md:block pointer-events-none"
-        style={{ width: '65%' }}
+        style={{ width: '75%' }}
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.4 }}
