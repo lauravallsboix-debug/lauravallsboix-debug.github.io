@@ -77,7 +77,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               {[
-                { number: '6+', label: 'Años de experiencia' },
+                { number: '4+', label: 'Años de experiencia' },
                 { number: '20+', label: 'Proyectos completados' },
                 { number: '5+', label: 'Empresas colaboradoras' },
               ].map((stat) => (
