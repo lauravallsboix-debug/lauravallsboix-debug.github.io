@@ -24,7 +24,7 @@ const pieces: { src: string; label: string; aspect: string; position?: string }[
   {
     src: '/projects/velvet/rotulo.png',
     label: 'Rótulo exterior',
-    aspect: 'aspect-video',
+    aspect: 'aspect-[3/4]',
     position: 'object-top',
   },
 ]
