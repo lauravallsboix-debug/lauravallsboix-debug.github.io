@@ -136,7 +136,7 @@ export default function SemillaProject() {
             <p className="text-base leading-relaxed max-w-3xl" style={{ color: '#3c5a28', opacity: 0.75 }}>
               No es solo un juego. Es una herramienta terapéutica que devuelve pequeños momentos
               de independencia y conexión — para el paciente, pero también para su familia y cuidadores.
-              Un proyecto que llegó a fase de producción con planos técnicos completos.
+              Un proyecto desarrollado hasta planos técnicos completos, listo para dar el salto a producción.
             </p>
           </motion.div>
         </section>
@@ -206,9 +206,9 @@ export default function SemillaProject() {
             style={{ color: '#3c5a28', opacity: 0.65 }}
             {...fadeUp(0.2)}
           >
-            Semilla llegó a fase de producción con planos técnicos completos en SolidWorks
-            y renders fotorrealistas en KeyShot. Un proyecto de diseño de producto que demuestra
-            que la empatía y el rigor técnico no son opuestos — son el mismo proceso.
+            Semilla se desarrolló hasta planos técnicos completos en SolidWorks
+            y renders fotorrealistas en KeyShot — preparado para producción, aunque sin llegar a fabricarse.
+            Un proyecto que demuestra que la empatía y el rigor técnico no son opuestos — son el mismo proceso.
           </motion.p>
         </section>
 
