@@ -68,20 +68,20 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.4 }}
         >
-          <a
-            href="#proyectos"
+          <button
+            onClick={() => document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-7 py-3 text-sm font-semibold tracking-wide rounded-full transition-all duration-300 hover:scale-105"
             style={{ backgroundColor: '#631d3f', color: '#dfdcd4' }}
           >
             Ver proyectos
-          </a>
-          <a
-            href="#contacto"
+          </button>
+          <button
+            onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-7 py-3 text-sm font-semibold tracking-wide rounded-full border transition-all duration-300 hover:scale-105"
             style={{ borderColor: '#631d3f', color: '#631d3f' }}
           >
             Contactar
-          </a>
+          </button>
         </motion.div>
       </div>
 

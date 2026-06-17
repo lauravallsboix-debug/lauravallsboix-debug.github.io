@@ -30,15 +30,19 @@ export default function Navbar() {
       </a>
 
       <ul className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
-        {['Proyectos', 'Sobre mí', 'Contacto'].map((item) => (
-          <li key={item}>
-            <a
-              href={`#${item.toLowerCase().replace(' ', '-')}`}
+        {[
+          { label: 'Proyectos', id: 'proyectos' },
+          { label: 'Sobre mí', id: 'sobre-mí' },
+          { label: 'Contacto', id: 'contacto' },
+        ].map(({ label, id }) => (
+          <li key={id}>
+            <button
+              onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}
               className="transition-opacity hover:opacity-60"
               style={{ color: '#3d1127' }}
             >
-              {item}
-            </a>
+              {label}
+            </button>
           </li>
         ))}
       </ul>
