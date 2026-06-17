@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-12 py-5 transition-all duration-300"
         style={{
           backgroundColor: scrolled || open ? 'rgba(223,220,212,0.97)' : 'transparent',
           backdropFilter: scrolled || open ? 'blur(12px)' : 'none',
