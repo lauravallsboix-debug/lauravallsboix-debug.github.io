@@ -76,6 +76,7 @@ export const projects: Project[] = [
     tags: ['InDesign', 'Editorial', 'Print'],
     image: '/projects/catalogo.jpg',
     color: '#dce6f0',
+    route: '/proyecto/llar',
   },
   {
     id: 'carteles',
@@ -87,6 +88,7 @@ export const projects: Project[] = [
     image: '/projects/carteles.jpg',
     color: '#e8dde0',
     imagePosition: '35% center',
+    route: '/proyecto/carteles',
   },
   {
     id: 'uo',
