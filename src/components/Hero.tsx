@@ -25,7 +25,7 @@ export default function Hero() {
       {/* Illustration — right side */}
       <motion.div
         className="absolute right-0 top-0 h-full hidden md:block pointer-events-none"
-        style={{ width: '42%' }}
+        style={{ width: '50%' }}
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.4 }}
@@ -33,8 +33,13 @@ export default function Hero() {
         <img
           src="/header-illustration.jpg"
           alt=""
-          className="w-full h-full object-cover object-top"
-          style={{ maskImage: 'linear-gradient(to left, rgba(0,0,0,0.7) 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,0.7) 60%, transparent 100%)' }}
+          className="w-full h-full object-cover object-center"
+          style={{
+            maskImage: 'linear-gradient(to left, black 30%, transparent 75%), linear-gradient(to bottom, black 50%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to left, black 30%, transparent 75%), linear-gradient(to bottom, black 50%, transparent 100%)',
+            maskComposite: 'intersect',
+            WebkitMaskComposite: 'source-in',
+          }}
         />
       </motion.div>
 
