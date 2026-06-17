@@ -65,6 +65,7 @@ export const projects: Project[] = [
     tags: ['Ilustración', 'Illustrator', 'Print'],
     image: '/projects/velvet.png',
     color: '#e8e4d8',
+    route: '/proyecto/velvet',
   },
   {
     id: 'catalogo',
