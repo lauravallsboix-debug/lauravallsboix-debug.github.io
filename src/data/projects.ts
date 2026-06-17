@@ -42,7 +42,7 @@ export const projects: Project[] = [
     description:
       'Tableros terapéuticos de madera para pacientes con Alzheimer. Cuatro piezas estacionales con aromas y elementos sensoriales para trabajar la orientación temporal y la estimulación cognitiva.',
     tags: ['SolidWorks', 'KeyShot', 'Producto'],
-    image: '/projects/semilla.jpg',
+    image: '/projects/semilla-card.jpg',
     color: '#e8f0d8',
     imagePosition: '15% center',
     route: '/proyecto/semilla',

@@ -106,8 +106,8 @@ export default function SemillaProject() {
             </motion.div>
             <motion.figure className="overflow-hidden rounded-2xl" {...fadeUp(0.15)}>
               <img
-                src="/projects/semilla/abrazo.png"
-                alt="Abuela y nieta abrazándose"
+                src="/projects/semilla/abuelo.jpg"
+                alt="Abuelo con su familia"
                 className="w-full object-cover"
               />
             </motion.figure>
@@ -138,6 +138,28 @@ export default function SemillaProject() {
               de independencia y conexión — para el paciente, pero también para su familia y cuidadores.
               Un proyecto desarrollado hasta planos técnicos completos, listo para dar el salto a producción.
             </p>
+
+            {/* 4 cards de estaciones — justo debajo del texto */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
+              {boards.map((board, i) => (
+                <motion.figure
+                  key={board.season}
+                  className="overflow-hidden rounded-xl bg-white"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                >
+                  <div className="aspect-square overflow-hidden">
+                    <img src={board.src} alt={board.season} className="w-full h-full object-contain p-4" style={{ backgroundColor: '#f5f5f0' }} />
+                  </div>
+                  <div className="px-3 py-3">
+                    <p className="text-sm font-semibold mb-1" style={{ color: '#3c5a28' }}>{board.season}</p>
+                    <p className="text-xs leading-relaxed" style={{ color: '#3c5a28', opacity: 0.6 }}>{board.desc}</p>
+                  </div>
+                </motion.figure>
+              ))}
+            </div>
           </motion.div>
         </section>
 
@@ -152,7 +174,7 @@ export default function SemillaProject() {
             </h2>
           </motion.div>
 
-          <motion.figure className="overflow-hidden rounded-2xl mb-6" {...fadeUp(0.1)}>
+          <motion.figure className="overflow-hidden rounded-2xl" {...fadeUp(0.1)}>
             <img
               src="/projects/semilla/los-4-tableros.png"
               alt="Los 4 tableros Semilla"
@@ -160,27 +182,6 @@ export default function SemillaProject() {
               style={{ backgroundColor: '#4a7c35', maxHeight: 500 }}
             />
           </motion.figure>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {boards.map((board, i) => (
-              <motion.figure
-                key={board.season}
-                className="overflow-hidden rounded-xl bg-white"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
-                <div className="aspect-square overflow-hidden">
-                  <img src={board.src} alt={board.season} className="w-full h-full object-contain p-4" style={{ backgroundColor: '#f5f5f0' }} />
-                </div>
-                <div className="px-3 py-3">
-                  <p className="text-sm font-semibold mb-1" style={{ color: '#3c5a28' }}>{board.season}</p>
-                  <p className="text-xs leading-relaxed" style={{ color: '#3c5a28', opacity: 0.6 }}>{board.desc}</p>
-                </div>
-              </motion.figure>
-            ))}
-          </div>
         </section>
 
         {/* Render final */}
