@@ -11,6 +11,8 @@ import EntrelascuerdasProject from './components/projects/EntrelascuerdasProject
 import VelvetProject from './components/projects/VelvetProject'
 import LlarProject from './components/projects/LlarProject'
 import CartelesProject from './components/projects/CartelesProject'
+import SemillaProject from './components/projects/SemillaProject'
+import KintsugiProject from './components/projects/KintsugiProject'
 import PageTransitionOverlay from './components/PageTransitionOverlay'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -47,6 +49,8 @@ export default function App() {
         <Route path="/proyecto/velvet" element={<VelvetProject />} />
         <Route path="/proyecto/llar" element={<LlarProject />} />
         <Route path="/proyecto/carteles" element={<CartelesProject />} />
+        <Route path="/proyecto/semilla" element={<SemillaProject />} />
+        <Route path="/proyecto/kintsugi" element={<KintsugiProject />} />
       </Routes>
     </>
   )

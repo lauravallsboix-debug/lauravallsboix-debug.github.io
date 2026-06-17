@@ -22,6 +22,7 @@ export const projects: Project[] = [
     tags: ['UX/UI', 'Figma', 'WordPress'],
     image: '/projects/kintsugi.png',
     color: '#f5e6c8',
+    route: '/proyecto/kintsugi',
   },
   {
     id: 'lull',
@@ -44,6 +45,7 @@ export const projects: Project[] = [
     image: '/projects/semilla.jpg',
     color: '#e8f0d8',
     imagePosition: '15% center',
+    route: '/proyecto/semilla',
   },
   {
     id: 'entrelascuerdas',
