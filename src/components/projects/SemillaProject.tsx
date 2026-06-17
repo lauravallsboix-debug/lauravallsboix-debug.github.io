@@ -106,8 +106,8 @@ export default function SemillaProject() {
             </motion.div>
             <motion.figure className="overflow-hidden rounded-2xl" {...fadeUp(0.15)}>
               <img
-                src="/projects/semilla/abuelo.jpg"
-                alt="Abuelo con su familia"
+                src="/projects/semilla/abrazo.png"
+                alt="Abuela y nieta abrazándose"
                 className="w-full object-cover"
               />
             </motion.figure>
@@ -176,10 +176,10 @@ export default function SemillaProject() {
 
           <motion.figure className="overflow-hidden rounded-2xl" {...fadeUp(0.1)}>
             <img
-              src="/projects/semilla/los-4-tableros.png"
-              alt="Los 4 tableros Semilla"
-              className="w-full object-contain"
-              style={{ backgroundColor: '#4a7c35', maxHeight: 500 }}
+              src="/projects/semilla/abuelo.jpg"
+              alt="Abuelo con su familia"
+              className="w-full object-cover"
+              style={{ maxHeight: 500 }}
             />
           </motion.figure>
         </section>
