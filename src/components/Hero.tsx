@@ -87,20 +87,20 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <motion.div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 0.6 }}
+        transition={{ delay: 2, duration: 0.8 }}
       >
-        <span className="text-xs tracking-widest uppercase" style={{ color: '#631d3f', opacity: 0.5 }}>
-          scroll
-        </span>
-        <motion.div
-          className="w-px h-12"
-          style={{ backgroundColor: '#631d3f', opacity: 0.3 }}
-          animate={{ scaleY: [0.4, 1, 0.4] }}
-          transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
-        />
+        <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+          <rect x="1" y="1" width="20" height="32" rx="10" stroke="#631d3f" strokeOpacity="0.35" strokeWidth="1.5" />
+          <motion.rect
+            x="9" y="7" width="4" height="7" rx="2"
+            fill="#631d3f" fillOpacity="0.5"
+            animate={{ y: [7, 19], opacity: [0.6, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: 'easeIn', repeatDelay: 0.5 }}
+          />
+        </svg>
       </motion.div>
     </section>
   )
