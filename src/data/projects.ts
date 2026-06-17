@@ -9,6 +9,7 @@ export interface Project {
   imageFit?: 'cover' | 'contain'
   imagePosition?: string
   url?: string
+  route?: string
 }
 
 export const projects: Project[] = [
@@ -94,5 +95,6 @@ export const projects: Project[] = [
     tags: ['MidJourney', 'Illustrator', 'Producto'],
     image: '/projects/uo.png',
     color: '#e8f0ee',
+    route: '/proyecto/uo',
   },
 ]

@@ -1,11 +1,25 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 import { projects } from '../data/projects'
+import { usePageTransition } from '../context/TransitionContext'
 
 function ProjectCard({ project, index }: { project: (typeof projects)[0]; index: number }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+  const navigate = useNavigate()
+  const { triggerTransition } = usePageTransition()
+
+  const handleClick = () => {
+    if (project.route) {
+      const rect = (ref.current as unknown as HTMLElement).getBoundingClientRect()
+      triggerTransition(project.color, rect)
+      setTimeout(() => navigate(project.route!), 500)
+    } else if (project.url) {
+      window.open(project.url, '_blank')
+    }
+  }
 
   return (
     <motion.article
@@ -16,7 +30,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.1, ease: 'easeOut' }}
       whileHover={{ y: -6 }}
-      onClick={() => project.url && window.open(project.url, '_blank')}
+      onClick={handleClick}
     >
       <div className="w-full aspect-[4/3] overflow-hidden" style={{ backgroundColor: project.color }}>
         {project.image ? (
@@ -71,7 +85,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
         style={{ backgroundColor: 'rgba(99,29,63,0.85)' }}
       >
         <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#ffec9e' }}>
-          {project.url ? 'Ver web →' : 'Ver proyecto →'}
+          {project.url ? 'Ver web →' : project.route ? 'Ver proyecto →' : 'Próximamente'}
         </span>
       </motion.div>
     </motion.article>
