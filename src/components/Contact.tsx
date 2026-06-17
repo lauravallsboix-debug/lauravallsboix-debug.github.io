@@ -77,6 +77,14 @@ export default function Contact() {
               {link.label}
             </a>
           ))}
+          <a
+            href="/Laura Valls Boix Portfolio.pdf"
+            download
+            className="text-sm font-medium tracking-wide transition-opacity hover:opacity-50"
+            style={{ color: '#631d3f' }}
+          >
+            Portfolio PDF
+          </a>
         </motion.div>
       </div>
     </section>

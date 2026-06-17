@@ -3,8 +3,8 @@ import { useRef } from 'react'
 
 const skills = [
   'Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe InDesign',
-  'Adobe After Effects', 'SolidWorks', 'KeyShot', 'Cinema 4D',
-  'Canva', 'Procreate', 'MidJourney', 'WordPress',
+  'Adobe After Effects', 'Adobe Premiere', 'SolidWorks', 'KeyShot', 'Cinema 4D',
+  'Canva', 'Procreate', 'MidJourney', 'WordPress', 'Pacdora',
 ]
 
 export default function About() {
@@ -60,10 +60,13 @@ export default function About() {
               animate={inView ? { opacity: 0.8, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Me apasiona el diseño por todas las posibilidades que ofrece de
-              materializar una idea, darle forma y crear algo único. He
-              trabajado en branding, packaging, editorial, web y diseño de
-              producto para marcas como Gio De Giovanni y como freelance.
+              A lo largo de los años, mis experiencias profesionales me han
+              llevado a ampliar conocimientos, aprender de los errores y
+              perfeccionar mis procesos creativos. Me apasiona el diseño por
+              todas las posibilidades que ofrece de materializar una idea,
+              darle forma y crear algo único. He trabajado en branding,
+              packaging, editorial, web y producto para marcas como
+              Gio De Giovanni y como freelance.
             </motion.p>
 
             {/* Experience highlights */}
@@ -100,7 +103,7 @@ export default function About() {
               className="text-sm font-medium tracking-[0.15em] uppercase mb-6"
               style={{ color: '#ffec9e' }}
             >
-              Herramientas
+              Skills
             </p>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, i) => (

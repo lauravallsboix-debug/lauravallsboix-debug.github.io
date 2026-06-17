@@ -21,14 +21,6 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-24 overflow-hidden"
       style={{ backgroundColor: '#dfdcd4' }}
     >
-      {/* Background accent */}
-      <motion.div
-        className="absolute top-20 right-0 w-72 h-72 md:w-[500px] md:h-[500px] rounded-full opacity-40 pointer-events-none"
-        style={{ backgroundColor: '#ffec9e' }}
-        initial={{ scale: 0.8, opacity: 0 }}
-        animate={{ scale: 1, opacity: 0.4 }}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
-      />
 
       <div className="relative z-10 max-w-4xl">
         <motion.p

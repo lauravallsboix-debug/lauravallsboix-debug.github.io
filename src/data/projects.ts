@@ -25,7 +25,7 @@ export const projects: Project[] = [
   {
     id: 'lull',
     title: "L'ULL",
-    category: 'Proyecto Personal',
+    category: 'Marca Personal',
     description:
       "Marca propia multidisciplinar que combina joyería artesanal y diseño de ropa. Identidad completa, sub-marcas (La mar de be, Terreta), fichas técnicas y comunicación digital.",
     tags: ['Branding', 'Moda', 'Identidad'],
@@ -83,6 +83,7 @@ export const projects: Project[] = [
     tags: ['Ilustración', 'Illustrator', 'Photoshop'],
     image: '/projects/carteles.jpg',
     color: '#e8dde0',
+    imagePosition: '35% center',
   },
   {
     id: 'uo',
